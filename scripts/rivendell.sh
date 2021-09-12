@@ -71,7 +71,7 @@ sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificat
 sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 
-The redirection is done by the shell before sudo is even started. So either make sure the redirection happens in a shell with the right permissions
+#The redirection is done by the shell before sudo is even started. So either make sure the redirection happens in a shell with the right permissions
 
 sudo bash -c  'echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list'
 

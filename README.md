@@ -39,8 +39,6 @@ vagrant --version
 
 ---
 
-        [WARNING SystemVerification]: this Docker version is not on the list of validated versions: 20.10.8. Latest validated version: 19.03
-
 ## Destruir o "Um-Anel":
 
 Dentro do meu código o mago Gandalf será o MASTER do cluster e os hobbits serão os nodes, esperamos concluir nossa missão que é destruir o "Um Anel", digo tirar a certificação:
@@ -48,8 +46,16 @@ Dentro do meu código o mago Gandalf será o MASTER do cluster e os hobbits ser�
 Meu vagrant e meus scripts crescem a medida que assito as aulas do Jeff e dessa forma meu ponto de partida diário obedece o progresso do dia anterior.
 
 ```
-vagrant up gandalf
+vagrant up
 ```
+
+Vai demorar um pouco, pois são 3 maquinas.
+
+Caso queira recuperar o comando para adicionar nós:
+```
+sudo kubeadm token create --print-join-command
+```
+
 
 
 * Para brincar de criação de cluster: https://labs.play-with-k8s.com/
