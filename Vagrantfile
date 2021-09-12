@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "gandalf" do |gandalf|
     gandalf.vm.box = "bento/ubuntu-18.04"
     gandalf.vm.hostname = "gandalf"
-    gandalf.vm.network "public_network", ip: "192.168.0.200"
+    gandalf.vm.network "public_network", bridge: "en1: enp3s0", ip: "192.168.0.200"
     gandalf.vm.provider "virtualbox" do |vb|
         vb.memory = 2048
         vb.cpus = 2
@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "hobbit0#{i}" do |hobbit|
     hobbit.vm.box = "bento/ubuntu-18.04"
     hobbit.vm.hostname = "hobbit0#{i}"
-    hobbit.vm.network "public_network", ip: "192.168.0.20#{i}"
+    hobbit.vm.network "public_network", bridge: "en1: enp3s0", ip: "192.168.0.20#{i}"
     hobbit.vm.provider "virtualbox" do |vb|
         vb.memory = 2048
         vb.cpus = 2
