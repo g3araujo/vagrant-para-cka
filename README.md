@@ -39,6 +39,8 @@ vagrant --version
 
 ---
 
+        [WARNING SystemVerification]: this Docker version is not on the list of validated versions: 20.10.8. Latest validated version: 19.03
+
 ## Destruir o "Um-Anel":
 
 Dentro do meu código o mago Gandalf será o MASTER do cluster e os hobbits serão os nodes, esperamos concluir nossa missão que é destruir o "Um Anel", digo tirar a certificação:

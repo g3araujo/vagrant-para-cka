@@ -1,7 +1,7 @@
 #! /bin/bash
 
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
 
 MASTER_IP="192.168.0.200"
 NODENAME=$(hostname -s)
