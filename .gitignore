@@ -2,3 +2,4 @@
 **/.vagrant/
 node.sh
 configs/*
+*.log

@@ -59,3 +59,13 @@ sudo kubeadm token create --print-join-command
 
 
 * Para brincar de criação de cluster: https://labs.play-with-k8s.com/
+
+
+  Links Importantes
+Tipos de topologias de K8s multi-master: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/
+
+Instalação kubeadm, kubelet e kubectl: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+
+Instalação Kubernetes multi-master: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/
+
+HAproxy: https://www.haproxy.org/
