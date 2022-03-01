@@ -7,12 +7,7 @@ Objetivo: criar ambiente de lab de baixo custo para a certificação CKA.
 ## Preparo:
 
 Para a instalação do Kubernetes, é necessário ter 03 máquinas/vm/instâncias com o setup mínimo abaixo:
-- Debian
-- Ubuntu
-- Centos
-- Red Hat
-- Fedora
-- SuSe
+- Ubuntu 18.04
 
 | CPU  |  Memoria  |
 | ---- | --------- |
@@ -54,16 +49,14 @@ Caso queira recuperar o comando para adicionar nós:
 sudo kubeadm token create --print-join-command
 ```
 
+## Para brincar de criação de cluster: 
+* https://labs.play-with-k8s.com/
 
+## Links Importantes
+* Tipos de topologias de K8s multi-master: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/
 
-Para brincar de criação de cluster: https://labs.play-with-k8s.com/
+* Instalação kubeadm, kubelet e kubectl: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
+* Instalação Kubernetes multi-master: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/
 
-  Links Importantes
-Tipos de topologias de K8s multi-master: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/
-
-Instalação kubeadm, kubelet e kubectl: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
-
-Instalação Kubernetes multi-master: https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/
-
-HAproxy: https://www.haproxy.org/
+* HAproxy: https://www.haproxy.org/
